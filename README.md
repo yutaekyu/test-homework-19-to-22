@@ -15,8 +15,11 @@ ORDER BY sid ASC → 학번(sid) 기준 오름차순 정렬
 
 
 SELECT DISTINCT s.dept
+
 FROM Students s
+
 JOIN Enroll e ON s.sid = e.sid;
+
 
 JOIN Enroll e ON s.sid = e.sid → 수강신청 정보와 학생 정보를 연결
 
