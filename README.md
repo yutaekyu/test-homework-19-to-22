@@ -1,5 +1,6 @@
 # test-homework-19-to-22
-19번 :CS 학과 학생의 sid, name을 sid 오름차순으로 조회하시오.
+## 19번 :CS 학과 학생의 sid, name을 sid 오름차순으로 조회하시오.
+
 SELECT sid, name → 조회할 컬럼 지정
 FROM Students → 조회 대상 테이블
 WHERE dept = 'CS' → CS 학과 학생만 선택
