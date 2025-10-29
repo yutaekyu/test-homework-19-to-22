@@ -12,15 +12,23 @@ ORDER BY sid ASC → 학번(sid) 기준 오름차순 정렬
 ---
 
 ## 20번 수강신청(Enroll) 기준으로 수강 중인 학과명(중복 제거)을 조회하시오.
+
+
 SELECT DISTINCT s.dept
 FROM Students s
 JOIN Enroll e ON s.sid = e.sid;
 
 JOIN Enroll e ON s.sid = e.sid → 수강신청 정보와 학생 정보를 연결
+
 SELECT DISTINCT s.dept → 중복 없이 학과명만 조회
+
 결과: 현재 수강 중인 학생들의 학과 목록이 출력됨
 
-21번 2024년에 입학한 학생의 이름과 "admit_year + 1" 값을 NEXT_YEAR 별칭으로 출력하시오.
+---
+
+
+## 21번 2024년에 입학한 학생의 이름과 "admit_year + 1" 값을 NEXT_YEAR 별칭으로 출력하시오.
+
 SELECT name, admit_year + 1 AS NEXT_YEAR → 이름과 입학년도+1을 조회하며 NEXT_YEAR라는 별칭 지정
 FROM Students → 학생 테이블 조회
 WHERE admit_year = 2024 → 2024년 입학 학생만 선택
