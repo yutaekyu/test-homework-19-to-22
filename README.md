@@ -95,7 +95,9 @@ SELECT c.title → Kim이 수강 중인 과목 제목 조회
 ## 25번Enroll.grade가 'A'면 4, 'B'면 3, 그 외 0으로 환산하여 score 컬럼으로 조회하시오.
 
 
+
 SELECT sid, cid,
+
        CASE 
        
            WHEN grade = 'A' THEN 4
