@@ -96,7 +96,6 @@ SELECT c.title → Kim이 수강 중인 과목 제목 조회
 
 
 SELECT sid, cid,
-
        CASE 
        
            WHEN grade = 'A' THEN 4
